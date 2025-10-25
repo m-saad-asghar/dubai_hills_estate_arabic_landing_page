@@ -254,7 +254,7 @@ export default function Banner() {
       </div>
       <div className='resp_usd'>
 <p className="down_styling">
-  463,000 دولار أمريكي / 398,000 يورو / <span className="line-break">344,000 جنيه إسترليني</span>
+  436,000 دولار أمريكي / 375,000 يورو / <span className="line-break">324,000 جنيه إسترليني</span>
 </p>
       </div>
     </div>
