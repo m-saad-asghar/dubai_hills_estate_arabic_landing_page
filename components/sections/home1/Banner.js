@@ -41,7 +41,7 @@ export default function Banner() {
      const [countryValue, setCountryValue] = useState('');
   const [originValue, setOriginValue] = useState('');
     const [phoneError, setPhoneError] = useState('')
-    const [defaultCountry, setDefaultCountry] = useState("ae"); // default = Dubai
+    const [defaultCountry, setDefaultCountry] = useState("sa");
     const country = searchParams.get('country');
     const [formData, setFormData] = useState({
     name: '',
@@ -65,33 +65,7 @@ export default function Banner() {
     } else {
       setOriginValue('');
     }
-
-    if (country) {
-      const normalized = country.toLowerCase().replace(/\s+/g, "");
-
-      if (normalized === "india") {
-        setPrice("₹38.24L.*");
-      } else if (["uk", "ireland"].includes(normalized)) {
-        setPrice("GBP 324K.*");
-      } else {
-        setPrice("AED 1.6M.*");
-      }
-    }
     
-if (country) {
-  const countryMap = {
-    saudi_arabia: "sa",
-    egypt: "eg",
-    ae: "ae",
-  };
-
-  const normalized = country.toLowerCase().replace(/\s+/g, "_");
-  const mapped = countryMap[normalized];
-
-  if (mapped) {
-    setDefaultCountry(mapped);
-  }
-}
 
     if (country) {
   const formattedCountry = country
@@ -255,7 +229,7 @@ if (country) {
         <div className='banner_text_container'>
           <p className='heading_middle heading'>دبي هيلز استيت</p>
           <h1 className="heading_middle sub_heading">
-  Luxury Homes Starting from <span className="line-break">{price}</span>
+  منازل فاخرة تبدأ من <span className="line-break">1.7 مليون درهم إماراتي*</span>
 </h1>
 
         <p className='heading_middle content'>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
