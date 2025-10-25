@@ -101,9 +101,9 @@ export default function Future() {
                                             </div>
                 
                                                 <h2 className="investment_content">
-                <a href="javascript:void(0);">180,000 متر مربّع</a></h2>
+                <a href="javascript:void(0);">180,000 متر مربع</a></h2>
                 <p className="investment_text">
-                  <span className="about_para_span">دبي هيلز بارك.</span>
+                  <span className="about_para_span">مساحة حديقة دبي هيلز.</span>
                 </p>
                 
                                             </div>
@@ -127,10 +127,10 @@ export default function Future() {
                 
                                                 <h2 className="investment_content">
                 <a href="javascript:void(0);">
-                282,000 متر مربّع</a></h2>
+                282,000 متر مربع</a></h2>
                 
                 <p className="investment_text">
-                  <span className="about_para_span">دبي هيلز مول.</span>
+                  <span className="about_para_span">مساحة مول دبي هيلز.</span>
                 </p>
                                             </div>
                                         </div>
@@ -155,7 +155,7 @@ export default function Future() {
                 <a href="javascript:void(0);">3</a></h2>
                 
                 <p className="investment_text">
-                  <span className="about_para_span">مدارس.</span>
+                  <span className="about_para_span">مدارس رائدة.</span>
                 </p>
                                             </div>
                                         </div>

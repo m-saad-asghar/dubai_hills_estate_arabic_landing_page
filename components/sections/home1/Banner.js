@@ -229,7 +229,7 @@ export default function Banner() {
         <div className='banner_text_container'>
           <p className='heading_middle heading'>دبي هيلز استيت</p>
           <h1 className="heading_middle sub_heading">
-  منازل فاخرة تبدأ من <span className="line-break">1.7 مليون درهم إماراتي*</span>
+  منازل فاخرة تبدأ من <span className="line-break">1.6 مليون درهم إماراتي*</span>
 </h1>
 
         <p className='heading_middle content'>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
