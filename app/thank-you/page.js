@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation';
 import { FaCheckCircle } from 'react-icons/fa';
 import Script from 'next/script';
 
-
 export default function ThankYou() {
   const router = useRouter();
   const [progress, setProgress] = useState(0);
@@ -41,7 +40,7 @@ export default function ThankYou() {
 
   return (
     <>
-       <div
+    <div
       style={{
         display: 'flex',
         alignItems: 'center',
@@ -49,6 +48,7 @@ export default function ThankYou() {
         width: '100vw',
         height: '100vh',
       }}
+      dir='rtl'
     >
       <div style={{ textAlign: 'center', padding: '0 1rem', width: '100%', maxWidth: '400px' }}>
         <FaCheckCircle size={100} color="#9f8151" />
@@ -60,7 +60,7 @@ export default function ThankYou() {
             color: '#0b4a35',
           }}
         >
-          Thank You for Your Interest!
+          شكراً لاهتمامك!
         </h1>
         <p
           style={{
@@ -69,7 +69,7 @@ export default function ThankYou() {
             color: '#0b4a35',
           }}
         >
-          We will get back to you very soon.
+          سوف نتواصل معك قريباً جداً.
         </p>
 
         {/* Progress Bar */}
@@ -94,18 +94,17 @@ export default function ThankYou() {
         </div>
       </div>
     </div>
-     {/* ✅ Google Analytics Event Script */}
-     {/* <Script id="lead-submission-dubai-hills-en" strategy="afterInteractive">
+    {/* <Script id="lead-submission-dch-ar" strategy="afterInteractive">
       {`
-        window.gtag('event', 'lead_submission_dubai_estate_hills_en', {
-          lead_language: 'english',
-          project_name: 'duba_estate_hills',
-          landing_page: 'deh_en',
+        window.gtag('event', 'lead_submission_dch_ar', {
+          lead_language: 'arabic',
+          project_name: 'dubai_creek_harbour',
+          landing_page: 'dch_ar',
           currency: 'AED',
-          value: 250
+          value: 100
         });
       `}
     </Script> */}
-      </>
+    </>
   );
 }

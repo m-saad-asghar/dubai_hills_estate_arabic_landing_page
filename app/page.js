@@ -26,7 +26,7 @@ export default function Home() {
                 <Banner />
                  <About />
                  <TeamsListing/>
-                 <Future/>
+                <Future/>
                 <Features />
                 <Services />
                 <Map/>

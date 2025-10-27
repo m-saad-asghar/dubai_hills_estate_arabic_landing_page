@@ -36,13 +36,9 @@ export default function Banner() {
     const [isOpen, setOpen] = useState(false)
     const [keepUpdated, setKeepUpdated] = useState(true);
      const [disableBtn, setDisableBtn] = useState(false);
-     const [price, setPrice] = useState("AED 1.6M.*");
      const searchParams = useSearchParams();
-     const [countryValue, setCountryValue] = useState('');
   const [originValue, setOriginValue] = useState('');
     const [phoneError, setPhoneError] = useState('')
-    const [defaultCountry, setDefaultCountry] = useState("sa");
-    const country = searchParams.get('country');
     const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -52,7 +48,6 @@ export default function Banner() {
   
   useEffect(() => {
     const origin = searchParams.get('origin');
-    const country = searchParams.get('country');
 
     if (origin) {
       if (origin.toLowerCase() === 'meta') {
@@ -66,16 +61,6 @@ export default function Banner() {
       setOriginValue('');
     }
     
-
-    if (country) {
-  const formattedCountry = country
-    .replace(/_/g, ' ')
-    .toLowerCase()
-    .replace(/\b\w/g, (char) => char.toUpperCase());
-  setCountryValue(formattedCountry);
-} else {
-      setCountryValue('');
-    }
   }, [searchParams]);
 
   const handleChange = (e) => {
@@ -104,7 +89,7 @@ export default function Banner() {
   const payload_email = {
     LANDING_PAGE: "Dubai Hills Estate AR Landing Page",
     ORIGIN: originValue,
-    COUNTRY: countryValue,
+    COUNTRY: "Saudi Arabia",
     NAME: formData.name,
     PHONE_TEXT: formData.phone,
     EMAIL: formData.email,
@@ -132,7 +117,7 @@ export default function Banner() {
       SOURCE_ID: "WEB",
       ASSIGNED_BY_ID: 25,
       UF_CRM_1754652292782: "Dubai Hills Estate AR Landing Page",
-      UF_CRM_1761206533: countryValue,
+      UF_CRM_1761206533: "Saudi Arabia",
     },
     params: {
       REGISTER_SONET_EVENT: "Y",
@@ -319,7 +304,7 @@ export default function Banner() {
       </label>
         <PhoneInput
   name="phone"
-  country={defaultCountry}
+  country="sa"
   value={formData.phone}
   onChange={(value) =>
     setFormData({
